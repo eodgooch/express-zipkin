@@ -7,7 +7,7 @@ easy way to mix in zipkin tracing to their apps.
 
 ---
 
-Initialize the Zipkin Tracing Client.
+### Initialize the Zipkin Tracing Client
 ```javascript
    var zipkin = require("node-zipkin");
 
@@ -23,14 +23,14 @@ Initialize the Zipkin Tracing Client.
    });
 ```
 
-In your routes add the zipkin filter
+### Add the zipkin tracing to your routes
 ```javascript
    var zipkin = require("node-zipkin");
 
    app.all("*", zipkin.trace);
 ```
 
-Pass along the zipkin trace info to any client calls to trace the request
+### Trace requests to clients
 ```javascript
    var zipkin = require("node-zipkin");
 
@@ -41,7 +41,7 @@ Pass along the zipkin trace info to any client calls to trace the request
    };
 ```
 
-Trace a DB call
+### Trace a DB call
 ```javascript
    var zipkin = require("node-zipkin");
 
