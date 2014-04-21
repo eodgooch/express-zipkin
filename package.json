@@ -1,7 +1,7 @@
 {
   "name": "express-zipkin",
   "description": "A Zipkin Client for express apps that wraps the node-tryfer project.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "./index",
   "contributors": [
       {
