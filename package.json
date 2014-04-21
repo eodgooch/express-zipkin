@@ -1,5 +1,5 @@
 {
-  "name": "node-zipkin",
+  "name": "express-zipkin",
   "description": "A Zipkin Client for express apps that wraps the node-tryfer project.",
   "version": "0.0.1",
   "main": "./index",
@@ -12,9 +12,10 @@
   ],
   "repository": {
   "type": "git",
-  "url": "git@github.enernoc.net:BDAP/zipkin-service-node.git"
+  "url": "git@github.enernoc.net:eodgooch/express-zipkin.git"
 },
   "keywords": [
+    "express",
     "zipkin",
     "node",
     "tracing",
@@ -26,10 +27,11 @@
   },
   "devDependencies": {
     "express": "",
-    "nodeunit": "",
+    "mocha": "",
     "underscore": "1.3.x",
-    "espresso": "",
-    "jshint": ""
+    "jshint": "",
+    "node-mocks-http": "",
+    "nock": ""
   },
   "engines": {
     "node": ">= 0.6.0 && < 0.11"
@@ -40,6 +42,6 @@
   },
   "author": "Aaron Gooch",
   "license": "BSD",
-  "gitHead": "d43fc764ec314a09af11e4b9acd77130f580c903",
+  "gitHead": "",
   "readmeFilename": "README.md"
 }

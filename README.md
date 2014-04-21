@@ -1,4 +1,4 @@
-# node-zipkin: Express based NodeJS Zipkin Tracer Client
+# express-zipkin: Express based NodeJS Zipkin Tracer Client
 
 [![Build Status](https://secure.travis-ci.org/eodgooch/node-zipkin.png?branch=master)](http://travis-ci.org/eodgooch/node-zipkin)
 
