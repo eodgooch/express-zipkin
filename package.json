@@ -1,7 +1,7 @@
 {
   "name": "express-zipkin",
   "description": "A Zipkin Client for express apps that wraps the node-tryfer project.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "./index",
   "contributors": [
       {
@@ -23,7 +23,8 @@
   ],
   "dependencies": {
     "tryfer": "https://github.com/eodgooch/node-tryfer/tarball/master",
-    "scribe": "*"
+    "scribe": "*",
+    "moment": "*"
   },
   "devDependencies": {
     "express": "",
