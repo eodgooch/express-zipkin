@@ -25,14 +25,14 @@ easy way to mix in zipkin tracing to their apps.
 
 ### Add the zipkin tracing to your routes
 ```javascript
-   var zipkin = require("node-zipkin");
+   var zipkin = require("express-zipkin");
 
    app.all("*", zipkin.trace);
 ```
 
 ### Trace requests to clients
 ```javascript
-   var zipkin = require("node-zipkin");
+   var zipkin = require("express-zipkin");
 
    function (request, response, next) {
      var clientRequest = ...;
@@ -43,7 +43,7 @@ easy way to mix in zipkin tracing to their apps.
 
 ### Trace a DB call
 ```javascript
-   var zipkin = require("node-zipkin");
+   var zipkin = require("express-zipkin");
 
    function (request, response, next) {
      var redisClient = ...;
