@@ -15,11 +15,26 @@ easy way to mix in zipkin tracing to their apps.
    zipkin.start({
      scribeClientAddress: "localhost"
      , scribeClientPort: 1463
-     , rpcName: ""
+     , rpcName: "serverName"
      , scribeStoreName: "zipkin"
      , maxTraces: 50
-     , serverAddress: "localhost"
+     , serverAddress: "server ip address"
      , serverPort: 80
+   });
+```
+
+### Initialize the Zipkin Tracing Client for local debugging with no scribe client
+```javascript
+   var zipkin = require("node-zipkin");
+
+   // initialize zipkin when you start the server
+   zipkin.start({
+     rpcName: "serverName"
+     , maxTraces: 50
+     , serverAddress: "server ip address"
+     , serverPort: 80
+     , withDebugTracer: true // set this for local testing to see trace information in the console
+     , localTesting: true // set this so local development doesn't need a scribe client
    });
 ```
 
