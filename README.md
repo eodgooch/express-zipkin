@@ -7,9 +7,14 @@ easy way to mix in zipkin tracing to their apps.
 
 ---
 
+Install via npm
+```
+npm install express-zipkin
+```
+
 ### Initialize the Zipkin Tracing Client
 ```javascript
-   var zipkin = require("node-zipkin");
+   var zipkin = require("express-zipkin");
 
    // initialize zipkin when you start the server
    zipkin.start({
@@ -25,7 +30,7 @@ easy way to mix in zipkin tracing to their apps.
 
 ### Initialize the Zipkin Tracing Client for local debugging with no scribe client
 ```javascript
-   var zipkin = require("node-zipkin");
+   var zipkin = require("express-zipkin");
 
    // initialize zipkin when you start the server
    zipkin.start({
